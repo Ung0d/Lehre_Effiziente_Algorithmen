@@ -1,0 +1,64 @@
+\documentclass[12pt,german]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{textcomp}
+\usepackage{epsf}
+\usepackage{german}
+\usepackage{float}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage{amsmath,amsfonts,amssymb,amsxtra}  % z.B. für \text im math-modus
+\usepackage{pstricks,pst-node,pst-text,pst-3d}
+\usepackage{graphicx}
+\pagestyle{empty}
+\usepackage{tikz}
+\evensidemargin0cm
+\oddsidemargin0cm
+\textwidth16cm
+\textheight24cm
+\topmargin-2cm
+\parindent 0pt
+\newtheorem{aufgabe}{Aufgabe}
+
+\begin{document}
+\begin{flushright} Becker \end{flushright}
+\vspace{-5mm}
+\rule{\linewidth}{0.6mm}
+\begin{center}{ \Large Datenstrukturen und Effiziente Algorithmen}\\
+{\large Wintersemester 2019}\vspace{-3mm}
+\end{center}
+\rule{\linewidth}{0.6mm}
+\begin{flushleft}
+{\bf \large Präsenzaufgaben 2}
+\end{flushleft}
+
+\vspace*{3mm}
+
+{\bf Aufgabe 1.} (Fluss-Skalarprodukt)\\
+
+Sei $f$ ein Fluss in einem Netzwerk und $\alpha \in \mathbb{R}$ Das Fluss-Skalarprodukt $\alpha f$ ist eine Funktion $V \times V \rightarrow \mathbb{R}$ definiert durch
+$$ (\alpha f)(u, v) = \alpha \cdot f(u,v)$$
+Zeige, dass falls $f_1$ und $f_2$ Flüsse sind, so auch $\alpha f_1 + (1-\alpha) f_2$ für alle $\alpha$ zwischen 0 und 1.
+
+\bigskip
+
+{\bf Aufgabe 2.} (Knotenkapazitäten)\\
+
+Nehme an zusätzlich zu Kantenkapazitäten hat ein Flussnetzwerk Knotenkapazitäten. Das heißt jeder Knoten $v$ hat ein Limit $l(v)$, das regelt wieviel Fluss durch $v$ fließen darf. Zeige, wie man ein Netzwerk an $G=(V,E)$ mit Knotenkapazitäten in ein Netzwerk $G'=(V',E')$ ohne Knotenkapazitäten umwandelt, sodass ein maximaler Fluss in $G'$ den gleichen Wert wie in $G$ hat. Wieviele Knoten hat $G'$?
+
+
+\bigskip
+
+{\bf Aufgabe 3.} (Anwendung)\\
+
+Wir bearbeiten \textbf{MaxFlow.ipynb} auf Moodle via \href{https://jupyterhub.wolke.uni-greifswald.de}{Jupyter Uni Greifswald}.
+
+\medskip
+
+\bigskip
+
+\end{document}

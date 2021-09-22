@@ -1,0 +1,60 @@
+\documentclass[12pt,german]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{textcomp}
+\usepackage{epsf}
+\usepackage{german}
+\usepackage{float}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage{amsmath,amsfonts,amssymb,amsxtra}  % z.B. für \text im math-modus
+\usepackage{pstricks,pst-node,pst-text,pst-3d}
+\usepackage{graphicx}
+\pagestyle{empty}
+\usepackage{tikz}
+\evensidemargin0cm
+\oddsidemargin0cm
+\textwidth16cm
+\textheight24cm
+\topmargin-2cm
+\parindent 0pt
+\newtheorem{aufgabe}{Aufgabe}
+
+\begin{document}
+\begin{flushright} Becker \end{flushright}
+\vspace{-5mm}
+\rule{\linewidth}{0.6mm}
+\begin{center}{ \Large Datenstrukturen und Effiziente Algorithmen}\\
+{\large Wintersemester 2020}\vspace{-3mm}
+\end{center}
+\rule{\linewidth}{0.6mm}
+\begin{flushleft}
+{\bf \large Präsenzaufgaben 3}
+\end{flushleft}
+
+\vspace*{3mm}
+
+{\bf Aufgabe 1.} (Zyklische Rotationen)\\
+
+Nutze den Z-Algorithmus, um folgendes Problem in Linearzeit zu lösen: Seien $\alpha$, $\beta$ Strings mit $|\alpha|=|\beta|=n$. Ist $\alpha$ eine zyklische Rotation von $\beta$? D.h., besteht $\alpha$ aus einem Suffix von $\beta$ gefolgt von einem Präfix von $\beta$? 
+
+\medskip
+
+\textit{Beispiel: $\alpha=defabc$ und $\beta=abcdef$}
+
+\bigskip
+
+{\bf Aufgabe 2.} (Z-Werte am Start)\\
+
+Wenn der Z-Algorithmus $Z_2=q > 0$ findet, können $Z_3, \dots, Z_{q+2}$ sofort ermittelt werden, ohne zusätzliche Zeichenvergleiche zu machen. Vertiefe die Details dieser Aussage und finde eine Begründung.
+
+
+\bigskip
+
+\bigskip
+
+\end{document}

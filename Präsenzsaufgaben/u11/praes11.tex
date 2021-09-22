@@ -1,0 +1,61 @@
+\documentclass[12pt,german]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{textcomp}
+\usepackage{epsf}
+\usepackage{german}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{amsmath,amsfonts,amssymb,amsxtra}  % z.B. für \text im math-modus
+\usepackage{pstricks,pst-node,pst-text,pst-3d}
+\usepackage{graphicx}
+\pagestyle{empty}
+\usepackage{tikz}
+\evensidemargin0cm
+\oddsidemargin0cm
+\textwidth16cm
+\textheight24cm
+\topmargin-2cm
+\parindent 0pt
+\newtheorem{aufgabe}{Aufgabe}
+
+\begin{document}
+\begin{flushright} Becker \end{flushright}
+\vspace{-5mm}
+\rule{\linewidth}{0.6mm}
+\begin{center}{ \Large Datenstrukturen und Effiziente Algorithmen}\\
+{\large Wintersemester 2019}\vspace{-3mm}
+\end{center}
+\rule{\linewidth}{0.6mm}
+\begin{flushleft}
+{\bf \large Präsenzaufgaben 11}
+\end{flushleft}
+
+\vspace*{3mm}
+
+{\bf Aufgabe 1.} (Wdh $NP$, $CLIQUE$, $VertexCover$)\\
+Schildere möglichst kurz die wesentlichen Punkte im Beweis, dass $VertexCover$ $NP$-vollständig ist. ($CLIQUE\leq_p VertexCover$)
+\bigskip
+\bigskip
+
+{\bf Aufgabe 2.} (Wdh $2$-Approximation $VertexCover$)\\
+\begin{itemize}
+\item Beschreibe und beweise kurz einen $2$-Approximations-Algorithmus für das $VertexCover$ Problem. 
+\item Gib einen Graphen an, für den $APPROX\_VC$ immer ein suboptimales cover $C'$ mit $|C'|=2|C^*|$ ausgibt.
+\end{itemize}
+
+\bigskip
+\bigskip
+
+{\bf Aufgabe 3.} (Poly.zeit Reduktion und Approximation)\\
+Implizieren Aufgabe $1$ und $2$, dass es einen $c$ -Approximations-Alg. für $CLIQUE$ mit einer Konstante $c$ gibt?
+
+\bigskip
+\bigskip
+
+\newpage
+
+{\bf Aufgabe 4.} (Effizientes $VC$ in Bäumen)\\
+Finde einen Greedy-Algoritmus, der in Linearzeit ein Vertex Cover für einen Baum $T$ berechnen kann. 
+\textit{Tipp: Finde eine invariante Eigenschaft, die für jedes Blatt und ein Vertex Cover von $T$ gilt.}
+
+\end{document}
